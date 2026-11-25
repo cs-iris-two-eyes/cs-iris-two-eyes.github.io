@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Comment l'application utilise TikTok — Iris Two Eyes</title>
+<meta name="description" content="Iris Two Eyes - AI character / personnage IA.">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="stylesheet" href="../assets/style.css"></head>
+<body><header><div class="bar"><a class="brand" href="index.html"><img src="../assets/icon-1024.png" alt="Iris Two Eyes" width="44" height="44">Iris Two Eyes</a>
+<nav><a href="index.html">Accueil</a><a href="episodes.html">Épisodes</a><a href="about.html">À propos et contact</a><a href="tiktok.html" class="on">Usage de TikTok</a><a href="privacy.html">Confidentialité</a><a href="terms.html">Conditions</a></nav><a class="lang" href="../tiktok.html" hreflang="en">English</a></div></header>
+<main><h1>Comment l'application utilise TikTok</h1>
+<p>« Iris Two Eyes » est un petit outil de publication. Seul le créateur d'Iris l'utilise, pour publier les épisodes sur le compte TikTok d'Iris. Personne d'autre ne s'y connecte.</p>
+<h2>Login Kit</h2><p>Le créateur se connecte une fois avec TikTok et approuve l'application. TikTok envoie alors un code d'autorisation à notre page de retour (<code>callback.html</code> sur ce site). L'outil l'échange contre un jeton d'accès.</p>
+<ul><li><strong>user.info.basic</strong> : sert à afficher le compte connecté (nom et avatar) avant de publier.</li></ul>
+<h2>Publication de contenu (Content Posting API)</h2><ul>
+<li><strong>video.publish</strong> : l'outil envoie un épisode MP4, demande à TikTok les options de confidentialité permises, et vérifie l'état de la publication.</li>
+<li><strong>video.upload</strong> : inclus avec la Content Posting API ; non utilisé seul.</li>
+<li>Chaque vidéo est signalée comme contenu généré par IA.</li></ul>
+<h2>Ce qui est stocké</h2><ul><li>Le jeton d'accès, l'open ID du compte et le nom affiché. Ils restent sur l'ordinateur du créateur. Ils ne sont jamais publiés.</li>
+<li>Rien sur les autres utilisateurs ou spectateurs TikTok n'est collecté, stocké ou partagé. Ce site n'utilise ni cookie ni traceur.</li></ul>
+<h2>Comment révoquer l'accès</h2><p>Dans l'application TikTok : <em>Profil → Menu → Paramètres et confidentialité → Sécurité et autorisations → Gérer les autorisations des applications</em>, puis choisissez « Iris Two Eyes » et retirez-la. Le jeton stocké est alors supprimé. Vous pouvez aussi écrire à <a href="#" class="js-contact">Écrivez-nous</a>.</p>
+<p>Détails : <a href="privacy.html">Confidentialité</a> · <a href="terms.html">Conditions</a></p></main><footer><p>Iris est un personnage IA. Tous les épisodes sont signalés comme contenu généré par IA.</p><p><a href="privacy.html">Confidentialité</a><a href="terms.html">Conditions</a><a href="about.html">À propos et contact</a><a href="tiktok.html">Usage de TikTok</a></p></footer><script src="../assets/contact.js" defer></script></body></html>
